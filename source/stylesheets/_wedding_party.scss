@@ -1,0 +1,30 @@
+.wedding-party {
+  background-color: $mustard;
+  text-align: center;
+}
+
+.wedding-party-person {
+  @include span-columns(3);
+  padding-bottom: $base-spacing;
+  position: relative;
+
+  figcaption {
+    @include position(absolute, null null 0px 20px);
+    background-color: $navy;
+    padding: $base-spacing $medium-spacing $base-spacing $base-spacing;
+    position: absolute;
+    text-align: left;
+  }
+
+  h6 {
+    line-height: 1em;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  &:last-of-type {
+    @include omega;
+  }
+}

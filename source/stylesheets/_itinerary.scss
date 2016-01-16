@@ -1,0 +1,31 @@
+.itinerary-header {
+  background-color: lighten($mustard, 40%);
+  border-top: 2px solid $base-border-color;
+  padding: $base-spacing;
+}
+
+.itinerary-row {
+  @include outer-container;
+  border-bottom: $base-border;
+}
+
+.itinerary-time {
+  @include span-columns(3);
+  padding: $base-spacing;
+}
+
+.itinerary-description {
+  @include span-columns(9);
+  border-left: $base-border;
+  padding: $base-spacing;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.bleed-section-photo {
+  .itinerary & {
+    background-image: image-url("millwrights.png");
+  }
+}

@@ -1,0 +1,12 @@
+%section.schedule
+  .heading
+    %h2 Schedule
+
+    = image_tag "ct_state.svg"
+
+  - data.schedule.each do |s|
+    .event
+      %h5.header-divider-centered= s.event
+      %h3= s.name
+      %h6= s.street_address
+      %h6= s.extended_address

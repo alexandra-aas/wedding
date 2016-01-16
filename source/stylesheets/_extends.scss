@@ -1,0 +1,30 @@
+%button {
+  @include padding($base-spacing null);
+  background-color: $mustard;
+  border-radius: $base-border-radius;
+  color: $white;
+  display: inline-block;
+  font-family: $slab;
+  font-size: $small-font-size;
+  font-weight: 800;
+  margin-top: $medium-spacing;
+  text-decoration: none;
+  transition: $base-transition;
+
+  &:hover {
+    background-color: shade($mustard, 20%);
+  }
+}
+
+%header-divider {
+  margin-bottom: $medium-spacing;
+  padding-bottom: $medium-spacing;
+  position: relative;
+
+  &:after {
+    @include position(absolute, null 0 0);
+    @include size(40px 2px);
+    background-color: $mustard;
+    content: "";
+  }
+}

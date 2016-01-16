@@ -1,0 +1,67 @@
+.bleed-section {
+  @include clearfix;
+  margin-bottom: $largest-spacing;
+  position: relative;
+  width: 100%;
+}
+
+.bleed-section-content {
+  float: left;
+  margin-left: 4%;
+  text-align: left;
+  width: 44%;
+}
+
+.bleed-section-photo {
+  @include position(absolute, 0px 0px 0px 52%);
+  background-size: cover;
+}
+
+.button {
+  @extend %button;
+  @include padding(null $large-spacing);
+}
+
+.button-full-width {
+  @extend %button;
+  width: 100%;
+}
+
+.callout-bar {
+  @include clearfix;
+  background-color: $navy;
+}
+
+.callout-bar-image {
+  float: left;
+  width: 50%;
+}
+
+.callout-bar-content {
+  float: left;
+  padding: 50px;
+}
+
+.heading {
+  @include span-columns(12);
+  @include omega;
+}
+
+.header-divider {
+  @extend %header-divider;
+}
+
+.header-divider-centered {
+  @extend %header-divider;
+
+  &:after {
+    @include margin(null auto);
+  }
+}
+
+.intro {
+  @include omega;
+  @include shift(3);
+  @include span-columns(6);
+  margin-bottom: $large-spacing;
+}

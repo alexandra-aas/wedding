@@ -1,0 +1,9 @@
+- event: Ceremony
+  name: St. Dunstan's
+  street_address: 1345 Manchester Road
+  extended_address: Glastonbury, CT
+
+- event: Reception
+  name: Millwright's
+  street_address: 77 West Street
+  extended_address: Simsbury, CT

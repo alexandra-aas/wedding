@@ -1,0 +1,27 @@
+.hero {
+  background-image: image-url("hero.png");
+  background-size: cover;
+  color: $white;
+  height: 100vh;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  h4 {
+    margin: $medium-spacing;
+  }
+
+  .foo {
+    color: $mustard;
+    font-family: $numbers;
+    font-size: $large-font-size;
+    vertical-align: middle;
+  }
+}
+
+.hero-image {
+  width: 100%;
+  display: block;
+}

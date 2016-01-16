@@ -1,0 +1,10 @@
+.wedding-party.light-text
+  %section
+    %h2 Wedding Party
+
+    - data.wedding_party.each do |p|
+      %figure.wedding-party-person
+        = image_tag "wedding_party_#{p.image}.png"
+        %figcaption.light-text
+          %small= p.role
+          %h6= p.name

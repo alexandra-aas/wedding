@@ -1,0 +1,51 @@
+// Color
+$gray: #444;
+$navy: #24325D;
+$mustard: #B68D2D;
+$dark-mustard: darken($mustard, 5%);
+$off-white: #F5EFE0;
+$white: #fff;
+
+// Font Family
+$serif: "Engravers MT";
+$text: "Brandon Grotesque";
+$sans-serif: "Trade Gothic LT Std";
+$numbers: "Craw Modern URW";
+$slab: "Prospect";
+
+// Font Weight
+$normal: 400;
+
+// Font Size
+$base-font-size: 1em;
+$text-font-size: $base-font-size * 1.125;
+$smallest-font-size: $base-font-size * 0.625;
+$small-font-size: $base-font-size * 0.75;
+$medium-font-size: $base-font-size * 1.25;
+$large-font-size: $base-font-size * 2;
+$largest-font-size: $base-font-size * 3.125;
+
+// Letter Spacing
+$base-letter-spacing: 5px;
+
+// Line Height
+$base-line-height: 1em;
+$medium-line-height: $base-line-height * 1.5;
+$large-line-height: $base-line-height * 2;
+
+// Spacing
+$base-spacing: 1.25rem;
+$small-spacing: $base-spacing * 0.5;
+$medium-spacing: $base-spacing * 1.5;
+$large-spacing: $base-spacing * 4;
+$largest-spacing: $base-spacing * 6;
+
+// Border
+$base-border-color: lighten($mustard, 30%);
+$base-border: 1px solid $base-border-color;
+
+// Border Radius
+$base-border-radius: 2px;
+
+// Transition
+$base-transition: all 0.2s ease-in-out;

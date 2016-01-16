@@ -1,0 +1,7 @@
+.schedule {
+  text-align: center;
+}
+
+.event {
+  @include span-columns(6);
+}

@@ -1,0 +1,13 @@
+.bleed-section.itinerary
+  .bleed-section-content
+    .itinerary-header.itinerary-row
+      %h6 itinerary
+
+    - data.itinerary.each do |i|
+      .itinerary-row
+        .itinerary-time
+          %h6= i.time
+        .itinerary-description
+          %p= i.description
+
+  .bleed-section-photo
