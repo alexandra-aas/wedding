@@ -22,13 +22,7 @@ nav {
   text-decoration: none;
 
   &:hover,
-  &.active:hover {
-    background-color: $mustard;
-    color: $navy;
-  }
-
   &.active {
-    background-color: transparent;
     color: $mustard;
   }
 }

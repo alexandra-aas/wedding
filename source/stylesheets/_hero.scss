@@ -12,13 +12,13 @@
   h4 {
     margin: $medium-spacing;
   }
+}
 
-  .foo {
-    color: $mustard;
-    font-family: $numbers;
-    font-size: $large-font-size;
-    vertical-align: middle;
-  }
+.hero-date {
+  color: $mustard;
+  font-family: $numbers;
+  font-size: $large-font-size;
+  vertical-align: middle;
 }
 
 .hero-image {

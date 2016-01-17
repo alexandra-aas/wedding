@@ -3,6 +3,7 @@ var navHeight = $(".js-nav").height();
 var navLink = $(".js-nav-link");
 var heroSectionHeight = $("#anchor_hero").height();
 
+checkCurrentSectionOnScroll();
 countDown();
 
 navLink.click(function() {
