@@ -1,9 +1,9 @@
 .hero {
-  background-image: image-url("hero.png");
-  background-size: cover;
-  color: $white;
-  height: 100vh;
   text-align: center;
+
+  section {
+    padding-bottom: 0;
+  }
 
   h2 {
     margin-bottom: 0;

@@ -1,16 +1,20 @@
 .js-anchor#anchor_the_wedding
   = partial "hero"
 
-.js-anchor#anchor_location
-  = partial "location"
-
 .js-anchor#anchor_schedule
   = partial "schedule"
+
+.js-anchor#anchor_food
   = partial "callout", locals: { title: "Food", content: "Foo bar", image: "millwrights_food.png" }
 
 .js-anchor#anchor_accommodations
   = partial "accommodations"
+
+.js-anchor#anchor_transportation
   = partial "callout", locals: { title: "Transportation", content: "Party buses will be provided to transport guests from the hotels to the reception at Millwright's. Both buses will leave the hotels at 4:00 PM. The buses will then shuttle between Millwright's and the hotel, so guests can leave at their leisure. The last bus will leave Millwright's at 10:30 PM. Buses will not be provided for transportation to the ceremony.", image: "historic_map.png" }
+
+.js-anchor#anchor_location
+  = partial "location"
 
 .js-anchor#anchor_registry
   = partial "registry"

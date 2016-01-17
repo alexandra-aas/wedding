@@ -25,9 +25,9 @@ $(window).scroll(function() {
 
 function navScrollStyling(windowScrollHeight) {
   if (windowScrollHeight > navHeight) {
-    nav.addClass("scrolled");
+    nav.fadeIn();
   } else {
-    nav.removeClass("scrolled");
+    nav.fadeOut();
   }
 }
 

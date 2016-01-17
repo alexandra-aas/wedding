@@ -1,18 +1,14 @@
 nav {
   @include position(fixed, 0 0 null 0);
-  background-color: rgba($navy, 0.5);
+  background-color: rgba($mustard, 0.95);
+  border-bottom: 2px solid darken($mustard, 10%);
+  display: none;
   font-family: $slab;
   font-size: $smallest-font-size;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  transition: $base-transition;
   z-index: $nav-z-index;
-
-  &.scrolled {
-    background-color: rgba($navy, 0.95);
-    border-bottom: 2px solid darken($navy, 10%);
-  }
 }
 
 .nav-link {
@@ -23,6 +19,6 @@ nav {
 
   &:hover,
   &.active {
-    color: $mustard;
+    color: $navy;
   }
 }
