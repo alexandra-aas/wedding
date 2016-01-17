@@ -27,21 +27,6 @@
   width: 100%;
 }
 
-.callout-bar {
-  @include clearfix;
-  background-color: $navy;
-}
-
-.callout-bar-image {
-  float: left;
-  width: 50%;
-}
-
-.callout-bar-content {
-  float: left;
-  padding: 50px;
-}
-
 .heading {
   @include span-columns(12);
   @include omega;

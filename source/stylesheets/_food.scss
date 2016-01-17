@@ -1,0 +1,18 @@
+.food {
+  @include clearfix;
+  background-color: $navy;
+}
+
+.food-image {
+  float: left;
+  width: 50%;
+}
+
+.food-content {
+  float: left;
+  padding: $large-spacing;
+
+  p {
+    margin-top: $medium-spacing;
+  }
+}

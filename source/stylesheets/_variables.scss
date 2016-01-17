@@ -45,7 +45,10 @@ $base-border-color: lighten($mustard, 30%);
 $base-border: 1px solid $base-border-color;
 
 // Border Radius
-$base-border-radius: 2px;
+$base-border-radius: 3px;
 
 // Transition
 $base-transition: all 0.2s ease-in-out;
+
+// Z-Index
+$nav-z-index: 1000;

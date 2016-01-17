@@ -24,7 +24,8 @@ configure :development do
 end
 
 ###
-# Helpers
+require "lib/custom_helpers"
+helpers CustomHelpers
 ###
 
 # Methods defined in the helpers block are available in templates

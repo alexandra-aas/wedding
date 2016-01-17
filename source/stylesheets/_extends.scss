@@ -8,11 +8,22 @@
   font-size: $small-font-size;
   font-weight: 800;
   margin-top: $medium-spacing;
+  position: relative;
   text-decoration: none;
   transition: $base-transition;
 
   &:hover {
     background-color: shade($mustard, 20%);
+  }
+
+  img {
+    @include margin(null auto $base-spacing auto);
+    display: block;
+  }
+
+  &.button-disabled {
+    background-color: $mustard;
+    cursor: default;
   }
 }
 

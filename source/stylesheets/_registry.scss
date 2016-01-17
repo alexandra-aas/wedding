@@ -5,3 +5,10 @@
 .registry {
   @include span-columns(4);
 }
+
+.coming-soon-tag {
+  @include border-left-radius($base-border-radius);
+  @include position(absolute, $base-spacing 0 null null);
+  background-color: $navy;
+  padding: $small-spacing $base-spacing;
+}
