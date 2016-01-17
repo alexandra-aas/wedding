@@ -6,7 +6,13 @@
     .accommodation
       %h5.header-divider= a.name
       %p= a.description
-      %h6= a.street_address
-      %h6= a.extended_address
-      %h6 Phone: #{a.phone}
+      %ul
+        %li
+          %strong= a.address
+        %li
+          = link_to a.directions do
+            = fa_icon "map-marker"
+            %strong Directions
+        %li
+          %strong Phone: #{a.phone}
       = link_to "Book Now", a.booking_url, target: "_blank", class: "button"

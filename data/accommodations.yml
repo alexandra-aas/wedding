@@ -1,21 +1,23 @@
 - name: Homewood Suites
   description: |
-    Lorem ipsum dolor sit amet, te aeque iriure euismod usu, diam scribentur id
-    his. Ei sonet clita regione his. Pri ut inani antiopam. Quis oratio quaestio
-    at pri. Per fuisset definitionem ad, in tota zril aliquid sed, bonorum
-    molestie his eu. Legimus corrumpit scriptorem qui ei, audiam scribentur usu no.
-  street_address: 65 Glastonbury Blvd
-  extended_address: Glastonbury, CT
-  phone: 860.652.8111
+    Homewood Suites offers studio and one-bedroom suites. Accomodations include
+    a full kitchen, small living area, hot breakfast, free wifi, and access to
+    the fitness center. The group rate is available until September 9th. The
+    discounted rates are: $135 per night for a studio suite and $145 per night
+    for a king one-bedroom. Check in at 3:00 PM. Check out by 12:00 PM.
+  address: 65 Glastonbury Blvd, Glastonbury, CT
+  directions: https://goo.gl/maps/weei8efALb92
+  phone: 860-652-8111
   booking_url: http://group.homewood-suites.com/AasBurnsWedding
 
-- name: Hilton Garden
+- name: Hilton Garden Inn
   description: |
-    Lorem ipsum dolor sit amet, te aeque iriure euismod usu, diam scribentur id
-    his. Ei sonet clita regione his. Pri ut inani antiopam. Quis oratio quaestio
-    at pri. Per fuisset definitionem ad, in tota zril aliquid sed, bonorum
-    molestie his eu. Legimus corrumpit scriptorem qui ei, audiam scribentur usu no.
-  street_address: 85 Glastonbury Blvd
-  extended_address: Glastonbury, CT
-  phone: 860.659.1025
+    Hilton Garden Inn offers standard guest rooms. Accommodations include a
+    refrigerator, microwave, free wifi, and cable television. Additional
+    amenities include an onsite indoor pool, whirlpool, and fitness center.
+    The group rate is available until September 23rd. The discount rate is $129
+    per night for one king or two queens. Check in at 3:00 PM. Check out by 12:00 PM.
+  address: 85 Glastonbury Blvd, Glastonbury, CT
+  directions: https://goo.gl/maps/ENh8zH29Tnv
+  phone: 860-659-1025
   booking_url: http://hiltongardeninn.hilton.com/en/gi/groups/personalized/B/BDLGHGI-AABUWG-20161021/index.jhtml?WT.mc_id=POG

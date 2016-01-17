@@ -27,6 +27,25 @@
   width: 100%;
 }
 
+.callout {
+  @include clearfix;
+  background-color: $navy;
+}
+
+.callout-image,
+.callout-content {
+  float: left;
+  width: 50%;
+}
+
+.callout-content {
+  padding: $large-spacing;
+
+  p {
+    margin-top: $medium-spacing;
+  }
+}
+
 .heading {
   @include span-columns(12);
   @include omega;

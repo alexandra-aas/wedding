@@ -1,10 +1,13 @@
 var anchoredSection = $(".js-anchor");
-var navHeight = $(".js-nav").height();
+var nav = $(".js-nav");
+var navHeight = nav.height();
 var navLink = $(".js-nav-link");
 var heroSectionHeight = $("#anchor_hero").height();
+var windowScrollHeight = $(window).scrollTop();
 
 checkCurrentSectionOnScroll();
 countDown();
+navScrollStyling(windowScrollHeight);
 
 navLink.click(function() {
   var target = $($(this).data("target"));
@@ -17,13 +20,16 @@ $(window).scroll(function() {
   var windowScrollHeight = $(window).scrollTop();
 
   checkCurrentSectionOnScroll();
-
-  if (windowScrollHeight > navHeight) {
-    $(".js-nav").addClass("scrolled");
-  } else {
-    $(".js-nav").removeClass("scrolled");
-  }
+  navScrollStyling(windowScrollHeight);
 });
+
+function navScrollStyling(windowScrollHeight) {
+  if (windowScrollHeight > navHeight) {
+    nav.addClass("scrolled");
+  } else {
+    nav.removeClass("scrolled");
+  }
+}
 
 function countDown() {
   var wedding = moment([2016, 10, 22]).fromNow(true);

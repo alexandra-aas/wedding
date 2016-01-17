@@ -7,6 +7,10 @@
 .itinerary-row {
   @include outer-container;
   border-bottom: $base-border;
+
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .itinerary-time {
@@ -19,9 +23,6 @@
   border-left: $base-border;
   padding: $base-spacing;
 
-  p {
-    margin-bottom: 0;
-  }
 }
 
 .bleed-section-photo {

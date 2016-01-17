@@ -4,7 +4,7 @@
 
     - data.wedding_party.each do |p|
       %figure.wedding-party-person
-        = image_tag "wedding_party_#{p.image}.png"
+        = image_tag "wedding_party_#{p.name.downcase}.png"
         %figcaption.light-text
           %small= p.role
           %h6= p.name

@@ -1,15 +1,11 @@
 - role: Maid of Honor
   name: Jacqueline
-  image: "jacqueline_aas"
 
 - role: Best Man
   name: Michael
-  image: "michael_kasianchuk"
 
 - role: Bridesmaid
   name: Kayla
-  image: "kayla_armando"
 
 - role: Groomsmen
   name: Andrew
-  image: "andrew_thompson"

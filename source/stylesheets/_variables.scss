@@ -1,5 +1,5 @@
 // Color
-$gray: #444;
+$gray: #555;
 $navy: #24325D;
 $mustard: #B68D2D;
 $dark-mustard: darken($mustard, 5%);
@@ -8,17 +8,17 @@ $white: #fff;
 
 // Font Family
 $serif: "Engravers";
-$text: "brandon-grotesque";
+$text: "adelle";
 $sans-serif: "presicav";
 $numbers: "craw-modern-urw";
 $slab: "Prospect";
 
 // Font Weight
-$normal: 400;
+$text-strong: 600;
 
 // Font Size
 $base-font-size: 1em;
-$text-font-size: $base-font-size * 1.125;
+$text-font-size: $base-font-size;
 $smallest-font-size: $base-font-size * 0.625;
 $small-font-size: $base-font-size * 0.75;
 $medium-font-size: $base-font-size * 1.25;
@@ -30,7 +30,6 @@ $base-letter-spacing: 5px;
 
 // Line Height
 $base-line-height: 1em;
-$medium-line-height: $base-line-height * 1.5;
 $large-line-height: $base-line-height * 2;
 
 // Spacing
