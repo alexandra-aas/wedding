@@ -9,7 +9,7 @@
   margin-bottom: $medium-spacing;
 
   @include media($medium-screen-up) {
-    display: block;
+    display: inline-block;
   }
 }
 

@@ -8,6 +8,10 @@
   h2 {
     font-size: $hero-mobile-font-size;
     margin-bottom: 0;
+
+    @include media($medium-screen-up) {
+      font-size: $largest-font-size;
+    }
   }
 
   h4 {
