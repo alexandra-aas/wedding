@@ -1,0 +1,20 @@
+---
+en:
+  food:
+    title: Food
+    content_html: |
+      Millwright's Restaurant and Tavern serves modern New England cuisine in a
+      historic, seventeenth-century mill. Chef / Owner Tyler Anderson, a 2015
+      James Beard nominee, crafts seasonally inspired dishes using produce and
+      products from local farms and purveyours. Because of the seasonlity of
+      the ingredients, new menus are created weekly, so guests will select their
+      three course meal at the reception. If you have food allergy, please note
+      it on the response card or email %{email}.
+  transportation:
+    title: Transportation
+    content: |
+      Party buses will be provided to transport guests from the hotels to the
+      reception at Millwright's. Both buses will leave the hotels at 4:00 PM.
+      The buses will then shuttle between Millwright's and the hotel, so guests
+      can leave at their leisure. The last bus will leave Millwright's at 10:30
+      PM. Buses will not be provided for transportation to the ceremony.

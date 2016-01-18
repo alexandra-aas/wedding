@@ -8,6 +8,10 @@ body {
 
 a {
   color: $navy;
+
+  .light-text & {
+    color: $mustard;
+  }
 }
 
 h2 {
