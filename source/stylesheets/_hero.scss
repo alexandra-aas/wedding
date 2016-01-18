@@ -6,11 +6,16 @@
   }
 
   h2 {
+    font-size: $hero-mobile-font-size;
     margin-bottom: 0;
   }
 
   h4 {
-    margin: $medium-spacing;
+    margin: $small-spacing;
+
+    @include media($medium-screen-up) {
+      margin: $medium-spacing;
+    }
   }
 }
 

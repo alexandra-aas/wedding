@@ -18,8 +18,23 @@ a {
   }
 }
 
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
+}
+
+h1 {
+  color: $navy;
+  font-family: $serif;
+  font-size: $hero-mobile-font-size;
+  font-weight: 100;
+  letter-spacing: $base-letter-spacing;
+  line-height: $medium-line-height;
+  margin-bottom: $medium-spacing;
+
+  @include media($medium-screen-up) {
+    font-size: $largest-font-size;
+    margin-bottom: $large-spacing;
+  }
 }
 
 h2 {
@@ -28,6 +43,7 @@ h2 {
   font-size: $medium-font-size;
   font-weight: 100;
   letter-spacing: $base-letter-spacing;
+  line-height: $medium-line-height;
   margin-bottom: $medium-spacing;
 
   @include media($medium-screen-up) {
@@ -76,8 +92,13 @@ h5 {
 h6 {
   color: $dark-mustard;
   font-family: $slab;
-  font-size: $small-font-size;
+  font-size: $smallest-font-size;
   font-weight: 900;
+
+  @include media($medium-screen-up) {
+    font-size: $small-font-size;
+    margin-bottom: $large-spacing;
+  }
 }
 
 a,

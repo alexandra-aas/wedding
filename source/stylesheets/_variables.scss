@@ -24,6 +24,7 @@ $text-semibold: 600;
 // Font Size
 $base-font-size: 1em;
 $text-font-size: $base-font-size;
+$hero-mobile-font-size: $base-font-size * 1.5;
 $smallest-font-size: $base-font-size * 0.625;
 $small-font-size: $base-font-size * 0.75;
 $medium-font-size: $base-font-size * 1.25;
@@ -35,6 +36,7 @@ $base-letter-spacing: 5px;
 
 // Line Height
 $base-line-height: 1em;
+$medium-line-height: $base-line-height * 1.5;
 $large-line-height: $base-line-height * 2;
 
 // Spacing

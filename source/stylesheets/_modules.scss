@@ -5,7 +5,11 @@
 
 .button {
   @extend %button;
-  @include padding(null $large-spacing);
+  width: 100%;
+
+  @include media($medium-screen-up) {
+    width: 300px;
+  }
 }
 
 .button-full-width {

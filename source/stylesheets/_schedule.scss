@@ -5,13 +5,14 @@
 }
 
 .state-of-connecticut {
+  display: none;
   margin-bottom: $medium-spacing;
 
   @include media($medium-screen-up) {
-    margin-bottom: 0;
+    display: block;
   }
 }
 
 .event {
-  @include responsive-grid(6, $large-spacing);
+  @include responsive-grid(6);
 }

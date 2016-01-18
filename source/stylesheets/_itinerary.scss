@@ -30,7 +30,7 @@
 }
 
 .itinerary-description {
-  @include padding($base-spacing null);
+  @include padding($small-spacing null $base-spacing null);
   @include span-columns(12);
 
   @include media($medium-screen-up) {

@@ -1,6 +1,6 @@
 .accommodations
   %section
-    %h2 Accommodations
+    %h2 Hotels
 
     %p.large-paragraph
       Discounted rates are available at two Glastonbury hotels. The hotels are
@@ -13,7 +13,8 @@
         %h5.header-divider= a.name
         %p= a.description
         %ul
-          %li= a.address
+          %li= a.street_address
+          %li= a.extended_address
           %li
             = link_to a.directions, target: "_blank" do
               = fa_icon "map-marker"
