@@ -13,12 +13,10 @@
       %h5.header-divider= a.name
       %p= a.description
       %ul
-        %li
-          %strong= a.address
+        %li= a.address
         %li
           = link_to a.directions, target: "_blank" do
             = fa_icon "map-marker"
-            %strong Directions
-        %li
-          %strong Phone: #{a.phone}
+            Directions
+        %li Phone: #{a.phone}
       = link_to "Book Now", a.booking_url, target: "_blank", class: "button"

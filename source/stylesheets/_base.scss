@@ -7,17 +7,11 @@ body {
 }
 
 a {
-  color: $mustard;
+  color: $dark-mustard;
   transition: $base-transition;
 
   &:hover {
-    color: shade($mustard, 40%);
-  }
-
-  .light-text & {
-    &:hover {
-      color: $white;
-    }
+    color: $darkest-mustard;
   }
 }
 
@@ -71,14 +65,22 @@ li {
   font-family: $text;
   font-size: $text-font-size;
   line-height: $large-line-height;
-
-  strong {
-    font-weight: $text-strong;
-  }
 }
 
 p {
   margin-bottom: $medium-spacing;
+}
+
+li {
+  font-weight: $text-semibold;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: $text-semibold;
 }
 
 small {

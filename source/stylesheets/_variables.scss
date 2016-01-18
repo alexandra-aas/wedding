@@ -4,6 +4,7 @@ $gray: #555;
 $navy: #24325D;
 $mustard: #B68D2D;
 $dark-mustard: darken($mustard, 5%);
+$darkest-mustard: darken($mustard, 15%);
 $off-white: #F5EFE0;
 $white: #fff;
 
@@ -15,7 +16,7 @@ $numbers: "craw-modern-urw";
 $slab: "Prospect";
 
 // Font Weight
-$text-strong: 600;
+$text-semibold: 600;
 
 // Font Size
 $base-font-size: 1em;

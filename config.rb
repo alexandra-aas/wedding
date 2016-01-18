@@ -5,9 +5,10 @@ page '/*.txt', layout: false
 require "lib/custom_helpers"
 helpers CustomHelpers
 
+activate :i18n
+
 configure :development do
   activate :livereload
-  activate :i18n
 end
 
 configure :build do
