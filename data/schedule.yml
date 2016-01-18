@@ -2,8 +2,10 @@
   name: St. Dunstan's
   street_address: 1345 Manchester Road
   extended_address: Glastonbury, CT
+  directions: https://goo.gl/maps/UyMr8fdxQyo
 
 - event: Reception
   name: Millwright's
   street_address: 77 West Street
   extended_address: Simsbury, CT
+  directions: https://goo.gl/maps/fiMNUusSiA82
