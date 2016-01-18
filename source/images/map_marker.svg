@@ -1,12 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="22px" height="28px" viewBox="0 0 22 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
-    <title>Page 1</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Desktop-HD-Copy-7" sketch:type="MSArtboardGroup" transform="translate(-1038.000000, -5063.000000)" fill="#B68D2D">
-            <path d="M1049,5078 C1046.791,5078 1045,5076.209 1045,5074 C1045,5071.791 1046.791,5070 1049,5070 C1051.209,5070 1053,5071.791 1053,5074 C1053,5076.209 1051.209,5078 1049,5078 M1049,5063 C1042.925,5063 1038,5067.925 1038,5074 C1038,5082.953 1048.219,5091 1049,5091 C1049.781,5091 1060,5082.953 1060,5074 C1060,5067.925 1055.075,5063 1049,5063" id="Page-1" sketch:type="MSShapeGroup"></path>
-        </g>
-    </g>
+<svg width="22" height="28" viewBox="0 0 22 28" xmlns="http://www.w3.org/2000/svg">
+  <path d="M11 15a4 4 0 1 1 0-8 4 4 0 0 1 0 8m0-15C4.925 0 0 4.925 0 11c0 8.953 10.22 17 11 17 .78 0 11-8.047 11-17 0-6.075-4.925-11-11-11" fill="#B68D2D" fill-rule="evenodd"/>
 </svg>

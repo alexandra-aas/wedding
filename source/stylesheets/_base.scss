@@ -22,6 +22,7 @@ h2 {
   font-weight: 100;
   letter-spacing: $base-letter-spacing;
   margin-bottom: $large-spacing;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -31,6 +32,7 @@ h3 {
   font-weight: 400;
   letter-spacing: $base-letter-spacing;
   margin-bottom: $base-spacing;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -57,6 +59,7 @@ h6 {
   font-size: $small-font-size;
   font-weight: 900;
   line-height: $large-line-height;
+  text-transform: uppercase;
 }
 
 p,

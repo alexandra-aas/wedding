@@ -1,5 +1,4 @@
 // Color
-$light-gray-blue: #F9F8F5;
 $gray: #555;
 $navy: #24325D;
 $mustard: #B68D2D;
@@ -9,11 +8,11 @@ $off-white: #F5EFE0;
 $white: #fff;
 
 // Font Family
-$serif: "Engravers";
-$text: "adelle";
-$sans-serif: "presicav";
-$numbers: "craw-modern-urw";
-$slab: "Prospect";
+$serif: "Engravers", "craw-modern-urw", Georgia, serif;
+$text: "adelle", Georgia, serif;
+$sans-serif: "presicav", Arial, Helvetica, sans-serif;
+$numbers: "craw-modern-urw", Georgia, serif;
+$slab: "Prospect", Georgia, serif;
 
 // Font Weight
 $text-semibold: 600;
