@@ -14,9 +14,15 @@
 }
 
 .itinerary-time {
-  @include padding($base-spacing);
-  @include span-columns(3);
+  @include padding($base-spacing null null);
+  @include span-columns(12);
   @include omega;
+
+  @include media($medium-screen-up) {
+    @include span-columns(3);
+    @include omega;
+    padding: $base-spacing;
+  }
 
   p {
     color: $dark-mustard;
@@ -24,13 +30,46 @@
 }
 
 .itinerary-description {
-  @include span-columns(9);
-  border-left: $base-border;
-  padding: $base-spacing;
+  @include padding($base-spacing null);
+  @include span-columns(12);
+
+  @include media($medium-screen-up) {
+    @include span-columns(9);
+    border-left: $base-border;
+    padding: $base-spacing;
+  }
+}
+
+.bleed-section {
+  @include clearfix;
+  margin-bottom: $medium-spacing;
+  position: relative;
+  width: 100%;
+
+  @include media($medium-screen-up) {
+    margin-bottom: $largest-spacing;
+  }
+}
+
+.bleed-section-content {
+  @include margin(null $base-spacing);
+  float: none;
+  text-align: left;
+
+  @include media($medium-screen-up) {
+    @include margin(null 0 null 4%);
+    float: left;
+    width: 44%;
+  }
 }
 
 .bleed-section-photo {
-  .itinerary & {
+  display: none;
+
+  @include media($medium-screen-up) {
+    @include position(absolute, 0px 0px 0px 52%);
     background-image: image-url("millwrights_interior.jpg");
+    background-size: cover;
+    display: block;
   }
 }

@@ -1,9 +1,5 @@
-.registries {
-  text-align: center;
-}
-
 .registry {
-  @include span-columns(4);
+  @include responsive-grid(4);
 }
 
 .coming-soon-tag {

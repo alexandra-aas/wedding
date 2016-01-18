@@ -4,6 +4,9 @@ html {
 
 body {
   background-color: $off-white;
+  color: $gray;
+  font-family: $text;
+  font-size: $text-font-size;
 }
 
 a {
@@ -15,42 +18,59 @@ a {
   }
 }
 
+h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
 h2 {
   color: $navy;
   font-family: $serif;
-  font-size: $largest-font-size;
+  font-size: $medium-font-size;
   font-weight: 100;
   letter-spacing: $base-letter-spacing;
-  margin-bottom: $large-spacing;
-  text-transform: uppercase;
+  margin-bottom: $medium-spacing;
+
+  @include media($medium-screen-up) {
+    font-size: $largest-font-size;
+    margin-bottom: $large-spacing;
+  }
 }
 
 h3 {
   color: $navy;
   font-family: $serif;
-  font-size: $large-font-size;
+  font-size: $medium-font-size;
   font-weight: 400;
   letter-spacing: $base-letter-spacing;
   margin-bottom: $base-spacing;
-  text-transform: uppercase;
+
+  @include media($medium-screen-up) {
+    font-size: $large-font-size;
+  }
 }
 
 h4 {
   color: $navy;
   font-family: $sans-serif;
-  font-size: $medium-font-size;
+  font-size: $small-font-size;
   font-weight: 900;
-  text-transform: uppercase;
   letter-spacing: $base-letter-spacing;
+
+  @include media($medium-screen-up) {
+    font-size: $medium-font-size;
+  }
 }
 
 h5 {
   color: $navy;
   font-family: $sans-serif;
-  font-size: $base-font-size;
+  font-size: $small-font-size;
   font-weight: 900;
-  text-transform: uppercase;
   letter-spacing: $base-letter-spacing;
+
+  @include media($medium-screen-up) {
+    font-size: $medium-font-size;
+  }
 }
 
 h6 {
@@ -58,15 +78,11 @@ h6 {
   font-family: $slab;
   font-size: $small-font-size;
   font-weight: 900;
-  line-height: $large-line-height;
-  text-transform: uppercase;
 }
 
+a,
 p,
 li {
-  color: $gray;
-  font-family: $text;
-  font-size: $text-font-size;
   line-height: $large-line-height;
 }
 
@@ -105,7 +121,11 @@ h1, h2, h3, h4, h5, h6, p, small {
 
 section {
   @include outer-container;
-  @include padding($largest-spacing null);
+  @include padding($medium-spacing $base-spacing);
+
+  @include media($medium-screen-up) {
+    @include padding($largest-spacing 0);
+  }
 }
 
 footer {

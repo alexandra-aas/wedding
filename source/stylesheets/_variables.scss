@@ -1,3 +1,7 @@
+// Grid
+$medium-screen: em(640);
+$medium-screen-up: new-breakpoint(min-width $medium-screen 12);
+
 // Color
 $gray: #555;
 $navy: #24325D;

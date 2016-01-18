@@ -1,6 +1,11 @@
 #map_wrapper {
+  display: none;
   height: 700px;
   position: relative;
+
+  @include media($medium-screen-up) {
+    display: block;
+  }
 }
 
 #map_fade {

@@ -1,0 +1,27 @@
+.callout {
+  @include clearfix;
+  background-color: $navy;
+}
+
+.callout-image,
+.callout-content {
+  float: none;
+  width: 100%;
+
+  @include media($medium-screen-up) {
+    float: left;
+    width: 50%;
+  }
+}
+
+.callout-content {
+  padding: $medium-spacing;
+
+  @include media($medium-screen-up) {
+    @include padding($large-spacing $large-spacing null);
+  }
+
+  p {
+    margin-top: $medium-spacing;
+  }
+}

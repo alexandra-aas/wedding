@@ -1,5 +1,5 @@
-%section.accommodations
-  .heading
+.accommodations
+  %section
     %h2 Accommodations
 
     %p.large-paragraph
@@ -8,15 +8,15 @@
 
     = image_tag "hotels.png", class: "accommodations-aerial-image block-image"
 
-  - data.accommodations.each do |a|
-    .accommodation
-      %h5.header-divider= a.name
-      %p= a.description
-      %ul
-        %li= a.address
-        %li
-          = link_to a.directions, target: "_blank" do
-            = fa_icon "map-marker"
-            Directions
-        %li Phone: #{a.phone}
-      = link_to "Book Now", a.booking_url, target: "_blank", class: "button"
+    - data.accommodations.each do |a|
+      .accommodation
+        %h5.header-divider= a.name
+        %p= a.description
+        %ul
+          %li= a.address
+          %li
+            = link_to a.directions, target: "_blank" do
+              = fa_icon "map-marker"
+              Directions
+          %li Phone: #{a.phone}
+        = link_to "Book Now", a.booking_url, target: "_blank", class: "button"

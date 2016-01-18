@@ -1,22 +1,3 @@
-.bleed-section {
-  @include clearfix;
-  margin-bottom: $largest-spacing;
-  position: relative;
-  width: 100%;
-}
-
-.bleed-section-content {
-  float: left;
-  margin-left: 4%;
-  text-align: left;
-  width: 44%;
-}
-
-.bleed-section-photo {
-  @include position(absolute, 0px 0px 0px 52%);
-  background-size: cover;
-}
-
 .block-image {
   display: block;
   width: 100%;
@@ -32,23 +13,8 @@
   width: 100%;
 }
 
-.callout {
-  @include clearfix;
-  background-color: $navy;
-}
-
-.callout-image,
-.callout-content {
-  float: left;
-  width: 50%;
-}
-
-.callout-content {
-  @include padding($large-spacing $large-spacing null);
-
-  p {
-    margin-top: $medium-spacing;
-  }
+.centered {
+  text-align: center;
 }
 
 .heading {
@@ -70,11 +36,19 @@
 }
 
 .intro {
-  @include omega;
-  @include shift(2);
-  @include span-columns(8);
+  @include span-columns(12);
+
+  @include media($medium-screen-up) {
+    @include omega;
+    @include shift(2);
+    @include span-columns(8);
+  }
 }
 
 .large-paragraph {
-  font-size: $medium-font-size;
+  font-size: $base-font-size;
+
+  @include media($medium-screen-up) {
+    font-size: $medium-font-size;
+  }
 }

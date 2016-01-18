@@ -1,7 +1,15 @@
 .accommodation {
-  @include span-columns(6);
+  @include responsive-grid(6, $large-spacing);
+
+  .button {
+    margin-top: $medium-spacing;
+  }
 }
 
 .accommodations-aerial-image {
-  margin-bottom: $large-spacing;
+  margin-bottom: $medium-spacing;
+
+  @include media($medium-screen-up) {
+    margin-bottom: $large-spacing;
+  }
 }

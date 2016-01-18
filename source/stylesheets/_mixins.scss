@@ -1,0 +1,13 @@
+@mixin responsive-grid($columns, $margin-bottom: $medium-spacing) {
+  @include span-columns(12);
+  @include margin(null 0 $margin-bottom null);
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @include media($medium-screen-up) {
+    @include span-columns($columns);
+    margin-bottom: 0;
+  }
+}

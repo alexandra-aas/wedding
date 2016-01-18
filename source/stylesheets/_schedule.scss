@@ -1,7 +1,17 @@
 .schedule {
-  text-align: center;
+  h6 {
+    line-height: $large-line-height;
+  }
+}
+
+.state-of-connecticut {
+  margin-bottom: $medium-spacing;
+
+  @include media($medium-screen-up) {
+    margin-bottom: 0;
+  }
 }
 
 .event {
-  @include span-columns(6);
+  @include responsive-grid(6, $large-spacing);
 }
