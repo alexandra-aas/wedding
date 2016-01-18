@@ -7,10 +7,17 @@ body {
 }
 
 a {
-  color: $navy;
+  color: $mustard;
+  transition: $base-transition;
+
+  &:hover {
+    color: shade($mustard, 40%);
+  }
 
   .light-text & {
-    color: $mustard;
+    &:hover {
+      color: $white;
+    }
   }
 }
 

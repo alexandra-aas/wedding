@@ -71,8 +71,8 @@
 
 .intro {
   @include omega;
-  @include shift(3);
-  @include span-columns(6);
+  @include shift(2);
+  @include span-columns(8);
 }
 
 .large-paragraph {
