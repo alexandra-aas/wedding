@@ -1,17 +1,6 @@
 #map_wrapper {
-  display: none;
-  height: 700px;
+  height: 600px;
   position: relative;
-
-  @include media($medium-screen-up) {
-    display: block;
-  }
-}
-
-#map_fade {
-  @include position(absolute, 0);
-  box-shadow: inset 0 20px 60px #F0F0E9;
-  z-index: $map-fade-z-index;
 }
 
 #map {

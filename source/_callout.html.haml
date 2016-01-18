@@ -1,6 +1,5 @@
-.callout.light-text
-  = image_tag image, class: "callout-image"
-
+.callout.light-text{ class: "#{title.downcase}"}
+  .callout-image
   .callout-content
     %h3= title
     %p= content

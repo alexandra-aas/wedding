@@ -1,8 +1,4 @@
 module CustomHelpers
-  def fa_icon(icon)
-    content_tag(:i, "", class: "fa fa-#{icon}")
-  end
-
   def javascript_void
     "javascript:void(0)"
   end

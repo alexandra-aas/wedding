@@ -2,89 +2,77 @@
   <div id="map_fade"></div>
   <div id="map"></div>
 
-  <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCMfpACZxcFQL0XQd4l8LeId4BYjJ8WHDE&extension=.js'></script>
+  <script src='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
+  <link href='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
 
   <script>
-    google.maps.event.addDomListener(window, 'load', init);
-    var map;
-    function init() {
-      var mapOptions = {
-        center: new google.maps.LatLng(41.8,-72.637596),
-        zoom: 11,
-        zoomControl: false,
-        disableDoubleClickZoom: true,
-        mapTypeControl: false,
-        scaleControl: true,
-        scrollwheel: false,
-        panControl: false,
-        streetViewControl: false,
-        draggable : true,
-        overviewMapControl: false,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        styles: [
-          {"featureType":"administrative.locality","elementType":"all","stylers":[{"hue":"#24325D"},{"visibility":"on"}]},
-          {"featureType":"landscape","elementType":"all","stylers":[{"hue":"#F5EFE0"},{"visibility":"simplified"}]},
-          {"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},
-          {"featureType":"road","elementType":"geometry","stylers":[{"hue":"#bbc0c4"},{"saturation":-93},{"lightness":31},{"visibility":"simplified"}]},
-          {"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},
-          {"featureType":"road.arterial","elementType":"labels","stylers":[{"visibility":"off"}]},
-          {"featureType":"road.local","elementType":"geometry","stylers":[{"hue":"#24325D"},{"saturation":-90},{"lightness":-8},{"visibility":"simplified"}]},
-          {"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},
-          {"featureType":"water","elementType":"all","stylers":[{"hue":"#24325D"},{"saturation":-78},{"lightness":67},{"visibility":"simplified"}]}]
-      }
-      var mapElement = document.getElementById('map');
-      var map = new google.maps.Map(mapElement, mapOptions);
-      var locations = [
-        ['Millwright\'s', '77 West Street<br />Simsbury, CT<br /><a href="https://goo.gl/maps/b65FUrrQmoR2">Directions</a>', 41.8700107, -72.8112329],
-        ['St. Dunstan\'s', '1345 Manchester Road<br />Glastonbury, CT<br /><a href="https://goo.gl/maps/GajGNrUyJDn">Directions</a>', 41.7161845, -72.5261296],
-        ['Hotels', '65 Glastonbury Blvd<br />Glastonbury, CT<br /><a href="https://goo.gl/maps/Y61nFF5pTQQ2">Directions</a>', 41.7237643, -72.6187202]
-      ];
+    L.mapbox.accessToken = 'pk.eyJ1IjoiYWxpLWFhcyIsImEiOiJjaWpraG1hbG8wMzRpdTZtNWJnb2xlOWhxIn0.jsA2xHllKnxrgY1T60pGqA';
+    var map = L.mapbox.map('map', 'mapbox.emerald').setView([41.8, -72.651902], 11);
 
-      for (i = 0; i < locations.length; i++) {
-        marker = new google.maps.Marker({
-          icon: 'images/map_marker.svg',
-          position: new google.maps.LatLng(locations[i][2], locations[i][3]),
-          map: map,
-          title: locations[i][0],
-          desc: locations[i][1],
-        });
-        link = '';
-        bindInfoWindow(marker, map, locations[i][0], locations[i][1], link);
-      }
-
-      function bindInfoWindow(marker, map, title, desc, link) {
-        var infoWindowVisible = (function () {
-          var currentlyVisible = false;
-          return function (visible) {
-            if (visible !== undefined) {
-              currentlyVisible = visible;
-            }
-            return currentlyVisible;
-          };
-        }());
-
-        iw = new google.maps.InfoWindow();
-        google.maps.event.addListener(marker, 'click', function() {
-          if (infoWindowVisible()) {
-            iw.close();
-            infoWindowVisible(false);
-          } else {
-            var html= "<div style=''><h6>"+title+"</h6><p>"+desc+"<p></div>";
-            iw = new google.maps.InfoWindow({content:html});
-            iw.open(map,marker);
-            map.panTo(marker.position);
-            infoWindowVisible(true);
+    var featureLayer = L.mapbox.featureLayer(
+      [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-72.811304, 41.870042]
+          },
+          "properties": {
+            "title": "Millwright's",
+            "address": "77 West Street, Simsbury, CT",
+            "directions": "https://goo.gl/maps/fiMNUusSiA82",
+            "marker-color": "#24325D",
+            "marker-size": "large",
+            "marker-symbol": "restaurant"
           }
-        });
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-72.525524, 41.715924]
+          },
+          "properties": {
+            "title": "St. Dunstan's",
+            "address": "1345 Manchester Road, Glastonbury, CT",
+            "directions": "https://goo.gl/maps/UyMr8fdxQyo",
+            "marker-color": "#24325D",
+            "marker-size": "large",
+            "marker-symbol": "religious-christian"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-72.618796, 41.723605]
+          },
+          "properties": {
+            "title": "Hotels",
+            "address": "65-85 Glastonbury Blvd, Glastonbuyr, CT",
+            "directions": "https://goo.gl/maps/UcArgKiw99A2",
+            "marker-color": "#24325D",
+            "marker-size": "large",
+            "marker-symbol": "town"
+          }
+        }
+      ]
+    ).addTo(map);
 
-        google.maps.event.addListener(iw, 'closeclick', function () {
-          alert("foo");
-          infoWindowVisible(false);
-          latLng = new google.maps.LatLng(41.758446,-72.637596)
-          map.panTo(latLng);
+    featureLayer.eachLayer(function(layer) {
+      var content =
+        '<p><strong>' + layer.feature.properties.title + '</strong><\/p>' +
+        '<p>' + layer.feature.properties.address + '<\/p>' +
+        '<p><a href=' + layer.feature.properties.directions + ' target="_blank">Directions</a>';
+      layer.bindPopup(content);
+    });
 
-        });
-      }
-    }
+    featureLayer.on('click', function(e) {
+      map.panTo(e.layer.getLatLng());
+    });
+
+    map.scrollWheelZoom.disable();
   </script>
+
+
 </div>

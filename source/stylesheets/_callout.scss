@@ -1,27 +1,38 @@
 .callout {
   @include clearfix;
   background-color: $navy;
+  min-height: 500px;
+  position: relative;
 }
 
-.callout-image,
-.callout-content {
-  float: none;
-  width: 100%;
+.callout-image {
+  @include size(100% 300px);
+  background-size: cover;
+  background-position: center;
 
   @include media($medium-screen-up) {
-    float: left;
-    width: 50%;
+    @include size(auto);
+    @include position(absolute, 0 50% 0 0);
+  }
+
+  .food & {
+    background-image: image-url("millwrights_food.jpg");
+  }
+
+  .buses & {
+    background-image: image-url("historic_map.png");
   }
 }
 
 .callout-content {
-  padding: $medium-spacing;
-
-  @include media($medium-screen-up) {
-    @include padding($large-spacing $large-spacing null);
-  }
+  padding: $medium-spacing $base-spacing;
 
   p {
-    margin-top: $medium-spacing;
+    @include margin($medium-spacing null 0);
+  }
+
+  @include media($medium-screen-up) {
+    margin-left: 50%;
+    padding: $large-spacing;
   }
 }

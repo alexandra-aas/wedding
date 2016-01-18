@@ -8,10 +8,8 @@
       .event
         %h5.header-divider-centered= s.event
         %h3= s.name
-        %h6= s.street_address
-        %h6= s.extended_address
         = link_to s.directions, target: "_blank" do
-          = fa_icon "map-marker"
-          %strong Directions
+          %h6= s.street_address
+          %h6= s.extended_address
 
 = partial "itinerary"
