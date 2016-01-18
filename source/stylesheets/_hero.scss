@@ -1,8 +1,10 @@
 .hero {
-  text-align: center;
-
   section {
-    padding-bottom: 0;
+    @include padding($largest-spacing null);
+
+    @include media($medium-screen-up) {
+      @include padding($largest-spacing null 0 null);
+    }
   }
 
   h2 {
