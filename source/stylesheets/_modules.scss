@@ -17,6 +17,11 @@
   background-size: cover;
 }
 
+.block-image {
+  display: block;
+  width: 100%;
+}
+
 .button {
   @extend %button;
   @include padding(null $large-spacing);
@@ -68,4 +73,8 @@
   @include shift(3);
   @include span-columns(6);
   margin-bottom: $large-spacing;
+}
+
+.large-paragraph {
+  font-size: $medium-font-size;
 }

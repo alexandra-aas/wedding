@@ -1,3 +1,7 @@
 .accommodation {
   @include span-columns(6);
 }
+
+.accommodations-aerial-image {
+  margin-bottom: $large-spacing;
+}

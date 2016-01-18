@@ -2,6 +2,12 @@
   .heading
     %h2 Accommodations
 
+    %p.large-paragraph
+      Discounted rates are available at two Glastonbury hotels. The hotels are
+      next to each other and share a parking lot.
+
+    = image_tag "hotels.png", class: "accommodations-aerial-image block-image"
+
   - data.accommodations.each do |a|
     .accommodation
       %h5.header-divider= a.name

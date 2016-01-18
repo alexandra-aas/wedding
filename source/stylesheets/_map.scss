@@ -1,0 +1,10 @@
+#map_wrapper {
+  height: 500px;
+  margin-bottom: $large-spacing;
+  position: relative;
+}
+
+#map {
+  @include position(absolute, 0px null);
+  width: 100%;
+}

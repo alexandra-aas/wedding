@@ -14,10 +14,7 @@
   description: Be seated for dinner and order your meal
 
 - time: 7:00 PM
-  description: Dance party in the loft or fireside drinks in the tavern
-
-- time: 9:00 PM
-  description: First bus arrives to bring guests back to the hotels
+  description: Dance party in the loft and fireside drinks in the tavern
 
 - time: 10:30 PM
   description: Last bus arrives to bring guests back to the hotels
