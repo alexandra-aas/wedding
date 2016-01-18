@@ -52,6 +52,7 @@
 }
 
 .heading {
+  @include clearfix;
   @include span-columns(12);
   @include omega;
 }
@@ -72,7 +73,6 @@
   @include omega;
   @include shift(3);
   @include span-columns(6);
-  margin-bottom: $large-spacing;
 }
 
 .large-paragraph {
