@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="150px" height="6px" viewBox="0 0 150 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD-Copy-6" sketch:type="MSArtboardGroup" transform="translate(-673.000000, -5503.000000)" fill="#B68D2D">
+            <path d="M739,5503 L742,5506 L739,5509 L736,5506 L739,5503 Z M733,5503 L736,5506 L733,5509 L730,5506 L733,5503 Z M754,5506 L757,5509 L760,5506 L757,5503 L754,5506 Z M760,5506 L763,5509 L766,5506 L763,5503 L760,5506 Z M748,5503 C744.685,5503 742,5504.344 742,5506 C742,5507.656 744.685,5509 748,5509 C751.315,5509 754,5507.656 754,5506 C754,5504.344 751.315,5503 748,5503 Z M673,5506 L727,5509 L730,5506 L727,5503 L673,5506 Z M769,5503 L766,5506 L769,5509 L823,5506 L769,5503 Z" id="Path" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

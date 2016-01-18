@@ -44,7 +44,7 @@
 }
 
 .callout-content {
-  padding: $large-spacing;
+  @include padding($large-spacing $large-spacing null);
 
   p {
     margin-top: $medium-spacing;
