@@ -1,11 +1,10 @@
 .schedule.centered
   %section
-    .heading
-      %h2 Schedule
-      = image_tag "ct_state.svg", class: "state-of-connecticut"
+    %h2 Schedule
+    = image_tag "ct_state.svg", class: "ct-state"
 
     - data.schedule.each do |s|
-      .event
+      .schedule-event
         %h5.header-divider-centered= s.event
         %h3= s.name
         %h6

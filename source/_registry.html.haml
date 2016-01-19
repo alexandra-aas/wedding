@@ -5,6 +5,6 @@
     - data.registry.each do |r|
       .registry
         = link_to javascript_void, class: "button-full-width button-disabled" do
-          %small.coming-soon-tag Coming Soon
+          %small.registry-coming-soon-tag Coming Soon
           = image_tag "registry_#{r.image}.svg"
           = r.name

@@ -2,7 +2,7 @@
   @include responsive-grid(4);
 }
 
-.coming-soon-tag {
+.registry-coming-soon-tag {
   @include border-left-radius($base-border-radius);
   @include position(absolute, $base-spacing 0 null null);
   background-color: $navy;

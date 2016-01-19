@@ -4,15 +4,16 @@
   }
 }
 
-.state-of-connecticut {
+.ct-state {
   display: none;
-  margin-bottom: $medium-spacing;
 
   @include media($medium-screen-up) {
-    display: inline-block;
+    @include margin(null auto);
+    display: block;
   }
 }
 
-.event {
+.schedule-event {
   @include responsive-grid(6);
+  margin-top: $medium-spacing;
 }

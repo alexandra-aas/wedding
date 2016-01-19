@@ -2,13 +2,22 @@ nav {
   @include position(fixed, 0 0 null 0);
   background-color: rgba($mustard, 0.95);
   border-bottom: 2px solid darken($mustard, 10%);
-  display: none;
   font-family: $slab;
   font-size: $smallest-font-size;
   font-weight: bold;
+  opacity: 0;
   text-align: center;
   text-transform: uppercase;
+  visibility: hidden;
   z-index: $nav-z-index;
+
+  @include media($medium-screen-up) {
+    &.scrolled {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 0.2s;
+    }
+  }
 }
 
 .nav-link {

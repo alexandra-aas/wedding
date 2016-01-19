@@ -2,12 +2,16 @@ var anchoredSection = $(".js-anchor");
 var nav = $(".js-nav");
 var navHeight = nav.height();
 var navLink = $(".js-nav-link");
-var heroSectionHeight = $("#anchor_hero").height();
 var windowScrollHeight = $(window).scrollTop();
 
 checkCurrentSectionOnScroll();
 countDown();
 navScrollStyling(windowScrollHeight);
+
+$(window).scroll(function() {
+  checkCurrentSectionOnScroll();
+  navScrollStyling();
+});
 
 navLink.click(function() {
   var target = $($(this).data("target"));
@@ -16,18 +20,13 @@ navLink.click(function() {
   $("html, body").animate({ scrollTop: scrollDistance }, 1000);
 });
 
-$(window).scroll(function() {
+function navScrollStyling(windowScrollHeight) {
   var windowScrollHeight = $(window).scrollTop();
 
-  checkCurrentSectionOnScroll();
-  navScrollStyling(windowScrollHeight);
-});
-
-function navScrollStyling(windowScrollHeight) {
   if (windowScrollHeight > navHeight) {
-    nav.fadeIn();
+    nav.addClass("scrolled");
   } else {
-    nav.fadeOut();
+    nav.removeClass("scrolled");
   }
 }
 

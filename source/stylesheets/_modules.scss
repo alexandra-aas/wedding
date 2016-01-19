@@ -21,12 +21,6 @@
   text-align: center;
 }
 
-.heading {
-  @include clearfix;
-  @include span-columns(12);
-  @include omega;
-}
-
 .header-divider {
   @extend %header-divider;
 }

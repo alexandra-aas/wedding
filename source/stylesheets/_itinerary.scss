@@ -14,7 +14,7 @@
 }
 
 .itinerary-time {
-  @include padding($base-spacing null null);
+  @include padding($base-spacing $base-spacing null);
   @include span-columns(12);
   @include omega;
 
@@ -30,7 +30,7 @@
 }
 
 .itinerary-description {
-  @include padding($small-spacing null $base-spacing null);
+  @include padding(null $base-spacing $base-spacing);
   @include span-columns(12);
 
   @include media($medium-screen-up) {
