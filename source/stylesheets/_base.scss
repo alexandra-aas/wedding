@@ -1,4 +1,5 @@
 html {
+  -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -18,32 +19,16 @@ a {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  text-transform: uppercase;
-}
-
-h1 {
-  color: $navy;
-  font-family: $serif;
-  font-size: $hero-mobile-font-size;
-  font-weight: 100;
-  letter-spacing: $base-letter-spacing;
-  line-height: $medium-line-height;
-  margin-bottom: $medium-spacing;
-
-  @include media($medium-screen-up) {
-    font-size: $largest-font-size;
-    margin-bottom: $large-spacing;
-  }
-}
-
-h2 {
+h2,
+h3 {
   color: $navy;
   font-family: $serif;
   font-size: $medium-font-size;
-  font-weight: 100;
   letter-spacing: $base-letter-spacing;
   line-height: $medium-line-height;
+}
+
+h2 {
   margin-bottom: $medium-spacing;
 
   @include media($medium-screen-up) {
@@ -53,11 +38,6 @@ h2 {
 }
 
 h3 {
-  color: $navy;
-  font-family: $serif;
-  font-size: $medium-font-size;
-  font-weight: 400;
-  letter-spacing: $base-letter-spacing;
   margin-bottom: $base-spacing;
 
   @include media($medium-screen-up) {
@@ -65,27 +45,24 @@ h3 {
   }
 }
 
-h4 {
+h4,
+h5 {
   color: $navy;
   font-family: $sans-serif;
   font-size: $small-font-size;
-  font-weight: 900;
+  font-weight: $bold;
   letter-spacing: $base-letter-spacing;
+}
 
+h4 {
   @include media($medium-screen-up) {
     font-size: $medium-font-size;
   }
 }
 
 h5 {
-  color: $navy;
-  font-family: $sans-serif;
-  font-size: $small-font-size;
-  font-weight: 900;
-  letter-spacing: $base-letter-spacing;
-
   @include media($medium-screen-up) {
-    font-size: $medium-font-size;
+    font-size: $base-font-size;
   }
 }
 
@@ -93,11 +70,15 @@ h6 {
   color: $dark-mustard;
   font-family: $slab;
   font-size: $smallest-font-size;
-  font-weight: 900;
+  font-weight: $bold;
 
   @include media($medium-screen-up) {
     font-size: $small-font-size;
   }
+}
+
+h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
 }
 
 a,
@@ -108,6 +89,10 @@ li {
 
 p {
   margin-bottom: $medium-spacing;
+
+  strong {
+    font-weight: $text-semibold;
+  }
 }
 
 li {
@@ -119,15 +104,15 @@ em {
 }
 
 strong {
-  font-weight: $text-semibold;
+  font-weight: $bold;
 }
 
 small {
   display: block;
   font-family: $sans-serif;
   font-size: $smallest-font-size;
-  font-weight: 900;
-  letter-spacing: 3px;
+  font-weight: $bold;
+  letter-spacing: $small-letter-spacing;
   line-height: $large-line-height;
   margin-bottom: $small-spacing;
   text-transform: uppercase;
@@ -150,5 +135,4 @@ section {
 
 footer {
   background: $dark-mustard;
-  text-align: center;
 }

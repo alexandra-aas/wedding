@@ -5,10 +5,10 @@
 }
 
 .ct-state {
+  @include margin(null auto);
   display: none;
 
-  @include media($medium-screen-up) {
-    @include margin(null auto);
+  @include media($medium-screen-up) {  
     display: block;
   }
 }

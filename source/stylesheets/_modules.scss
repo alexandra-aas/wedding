@@ -3,43 +3,30 @@
   width: 100%;
 }
 
-.button {
-  @extend %button;
-  width: 100%;
-
-  @include media($medium-screen-up) {
-    width: 300px;
-  }
-}
-
+.button,
 .button-full-width {
   @extend %button;
   width: 100%;
+}
+
+.button {
+  @include media($medium-screen-up) {
+    width: 300px;
+  }
 }
 
 .centered {
   text-align: center;
 }
 
-.header-divider {
+.header-divider,
+.header-divider-centered {
   @extend %header-divider;
 }
 
 .header-divider-centered {
-  @extend %header-divider;
-
   &:after {
     @include margin(null auto);
-  }
-}
-
-.intro {
-  @include span-columns(12);
-
-  @include media($medium-screen-up) {
-    @include omega;
-    @include shift(2);
-    @include span-columns(8);
   }
 }
 

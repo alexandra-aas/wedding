@@ -3,7 +3,7 @@
     @include padding($largest-spacing null);
 
     @include media($medium-screen-up) {
-      @include padding($largest-spacing null 0 null);
+      @include padding($largest-spacing null 0);
     }
   }
 
@@ -30,6 +30,4 @@
   font-family: $numbers;
   font-size: $large-font-size;
   vertical-align: middle;
-
-
 }

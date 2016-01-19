@@ -1,14 +1,11 @@
-// Grid
-$medium-screen: em(640);
-$medium-screen-up: new-breakpoint(min-width $medium-screen 12);
-
 // Color
 $gray: #555;
-$navy: #24325D;
-$mustard: #B68D2D;
+$navy: #24325d;
+$mustard: #b68d2d;
+$light-mustard: lighten($mustard, 30%);
 $dark-mustard: darken($mustard, 5%);
 $darkest-mustard: darken($mustard, 15%);
-$off-white: #F5EFE0;
+$off-white: #f5efe0;
 $white: #fff;
 
 // Font Family
@@ -20,18 +17,20 @@ $slab: "Prospect", Georgia, serif;
 
 // Font Weight
 $text-semibold: 600;
+$bold: bold;
 
 // Font Size
 $base-font-size: 1em;
 $text-font-size: $base-font-size;
-$hero-mobile-font-size: $base-font-size * 1.5;
 $smallest-font-size: $base-font-size * 0.625;
 $small-font-size: $base-font-size * 0.75;
 $medium-font-size: $base-font-size * 1.25;
+$hero-mobile-font-size: $base-font-size * 1.5;
 $large-font-size: $base-font-size * 2;
 $largest-font-size: $base-font-size * 3.125;
 
 // Letter Spacing
+$small-letter-spacing: 3px;
 $base-letter-spacing: 5px;
 
 // Line Height
@@ -47,7 +46,7 @@ $large-spacing: $base-spacing * 4;
 $largest-spacing: $base-spacing * 6;
 
 // Border
-$base-border-color: lighten($mustard, 30%);
+$base-border-color: $light-mustard;
 $base-border: 1px solid $base-border-color;
 
 // Border Radius
@@ -59,3 +58,7 @@ $base-transition: all 0.2s ease-in-out;
 // Z-Index
 $nav-z-index: 1000;
 $map-fade-z-index: 500;
+
+// Responsive
+$medium-screen: em(640);
+$medium-screen-up: new-breakpoint(min-width $medium-screen 12);
