@@ -1,16 +1,3 @@
-- name: Homewood Suites
-  description: |
-    Homewood Suites offers studio and one-bedroom suites. Accomodations include
-    a full kitchen, small living area, hot breakfast, free wifi, and access to
-    the fitness center. The group rate is available until September 9th. The
-    discounted rates are: $135 per night for a studio suite and $145 per night
-    for a king one-bedroom. Check in at 3:00 PM. Check out by 12:00 PM.
-  street_address: 65 Glastonbury Blvd
-  extended_address: Glastonbury, CT
-  directions: https://goo.gl/maps/UcArgKiw99A2
-  phone: 860-652-8111
-  booking_url: http://group.homewood-suites.com/AasBurnsWedding
-
 - name: Hilton Garden Inn
   description: |
     Hilton Garden Inn offers standard guest rooms. Accommodations include a
@@ -23,3 +10,16 @@
   directions: https://goo.gl/maps/U1mYr4GuMD72
   phone: 860-659-1025
   booking_url: http://hiltongardeninn.hilton.com/en/gi/groups/personalized/B/BDLGHGI-AABUWG-20161021/index.jhtml?WT.mc_id=POG
+
+- name: Homewood Suites
+  description: |
+    Homewood Suites offers studio and one-bedroom suites. Accomodations include
+    a full kitchen, small living area, hot breakfast, free wifi, and access to
+    the fitness center. The group rate is available until September 9th. The
+    discounted rates are: $135 per night for a studio suite and $145 per night
+    for a king one-bedroom. Check in at 3:00 PM. Check out by 12:00 PM.
+  street_address: 65 Glastonbury Blvd
+  extended_address: Glastonbury, CT
+  directions: https://goo.gl/maps/UcArgKiw99A2
+  phone: 860-652-8111
+  booking_url: http://group.homewood-suites.com/AasBurnsWedding

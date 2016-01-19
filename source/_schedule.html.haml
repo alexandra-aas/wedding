@@ -8,8 +8,10 @@
       .event
         %h5.header-divider-centered= s.event
         %h3= s.name
-        = link_to s.directions, target: "_blank" do
-          %h6= s.street_address
-          %h6= s.extended_address
+        %h6
+          = link_to s.directions, target: "_blank" do
+            = s.street_address
+            %br
+            = s.extended_address
 
 = partial "itinerary"

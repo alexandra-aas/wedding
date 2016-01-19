@@ -11,12 +11,9 @@
 .js-anchor#anchor_accommodations
   = partial "accommodations"
 
-.js-anchor#anchor_transportation
-  = partial "callout", locals: { title: t(".transportation.title"),
-    content: t(".transportation.content_html"), image: "historic_map.png" }
-
-.js-anchor#anchor_location
-  = partial "location"
+.js-anchor#anchor_buses
+  = partial "callout", locals: { title: t(".buses.title"),
+    content: t(".buses.content_html"), image: "historic_map.png" }
 
 .js-anchor#anchor_registry
   = partial "registry"
