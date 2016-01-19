@@ -1,11 +1,39 @@
-.itinerary-header {
+.itinerary {
+  @include margin($medium-spacing $base-spacing);
+  position: relative;
+
+  @include media($medium-screen-up) {
+    @include margin(0 0 $largest-spacing 4%);
+  }
+}
+
+.itinerary-table {
+  text-align: left;
+
+  @include media($medium-screen-up) {
+    width: 44%;
+  }
+}
+
+.itinerary-image {
+  @include position(absolute, 0px 0px 0px 50%);
+  background-image: image-url("millwrights_interior.jpg");
+  background-size: cover;
+  display: none;
+
+  @include media($medium-screen-up) {
+    display: block;
+  }
+}
+
+.itinerary-header-row {
   background-color: lighten($mustard, 40%);
   border-top: 2px solid $base-border-color;
   padding: $base-spacing;
 }
 
 .itinerary-row {
-  @include outer-container;
+  @include clearfix;
   border-bottom: $base-border;
 
   p {
@@ -13,15 +41,21 @@
   }
 }
 
-.itinerary-time {
-  @include padding($base-spacing $base-spacing null);
-  @include span-columns(12);
-  @include omega;
+.itinerary-row-time,
+.itinerary-row-description {
+  width: 100%;
 
   @include media($medium-screen-up) {
-    @include span-columns(3);
-    @include omega;
     padding: $base-spacing;
+    float: left;
+  }
+}
+
+.itinerary-row-time {
+  @include padding($base-spacing $base-spacing null);
+
+  @include media($medium-screen-up) {
+    width: 20%;
   }
 
   p {
@@ -29,47 +63,11 @@
   }
 }
 
-.itinerary-description {
+.itinerary-row-description {
   @include padding(null $base-spacing $base-spacing);
-  @include span-columns(12);
 
   @include media($medium-screen-up) {
-    @include span-columns(9);
     border-left: $base-border;
-    padding: $base-spacing;
-  }
-}
-
-.bleed-section {
-  @include clearfix;
-  margin-bottom: $medium-spacing;
-  position: relative;
-  width: 100%;
-
-  @include media($medium-screen-up) {
-    margin-bottom: $largest-spacing;
-  }
-}
-
-.bleed-section-content {
-  @include margin(null $base-spacing);
-  float: none;
-  text-align: left;
-
-  @include media($medium-screen-up) {
-    @include margin(null 0 null 4%);
-    float: left;
-    width: 44%;
-  }
-}
-
-.bleed-section-photo {
-  display: none;
-
-  @include media($medium-screen-up) {
-    @include position(absolute, 0px 0px 0px 52%);
-    background-image: image-url("millwrights_interior.jpg");
-    background-size: cover;
-    display: block;
+    width: 80%;
   }
 }
