@@ -1,3 +1,9 @@
+.accomodation-hero {
+  @include media($medium-screen-up) {
+    margin-bottom: $medium-spacing;
+  }
+}
+
 .accommodation {
   @include grid(2);
 

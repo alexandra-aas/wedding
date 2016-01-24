@@ -1,22 +1,25 @@
+// TODO: Calculations automatic
+
 .itinerary {
-  @include margin($medium-spacing $base-spacing);
   position: relative;
 
   @include media($medium-screen-up) {
-    @include margin(0 0 $largest-spacing 4%);
+    @include margin($medium-spacing 0 $largest-spacing);
   }
 }
 
 .itinerary-table {
-  text-align: left;
+  text-align: center;
 
   @include media($medium-screen-up) {
+    margin-left: 4%;
+    text-align: left;
     width: 44%;
   }
 }
 
 .itinerary-image {
-  @include position(absolute, 0px 0px 0px 50%);
+  @include position(absolute, 0px 0px 0px 52%);
   background-image: image-url("millwrights_interior.jpg");
   background-size: cover;
   display: none;
@@ -45,7 +48,7 @@
 .itinerary-row-description {
   width: 100%;
 
-  @include media($medium-screen-up) {
+  @include media($large-screen-up) {
     padding: $base-spacing;
     float: left;
   }
@@ -54,7 +57,7 @@
 .itinerary-row-time {
   @include padding($base-spacing $base-spacing null);
 
-  @include media($medium-screen-up) {
+  @include media($large-screen-up) {
     width: 20%;
   }
 
@@ -66,7 +69,7 @@
 .itinerary-row-description {
   @include padding(null $base-spacing $base-spacing);
 
-  @include media($medium-screen-up) {
+  @include media($large-screen-up) {
     border-left: $base-border;
     width: 80%;
   }

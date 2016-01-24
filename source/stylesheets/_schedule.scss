@@ -1,6 +1,6 @@
 .schedule {
-  h6 {
-    line-height: $large-line-height;
+  p {
+    margin-bottom: 0;
   }
 }
 
@@ -15,5 +15,4 @@
 
 .schedule-event {
   @include grid(2);
-  margin-top: $medium-spacing;
 }

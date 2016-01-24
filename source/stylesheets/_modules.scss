@@ -32,8 +32,4 @@
 
 .large-paragraph {
   font-size: $base-font-size;
-
-  @include media($medium-screen-up) {
-    font-size: $medium-font-size;
-  }
 }
