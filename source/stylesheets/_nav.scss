@@ -10,7 +10,7 @@ nav {
   visibility: hidden;
   z-index: $nav-z-index;
 
-  @include media($medium-screen-up) {
+  @include media($large-screen-up) {
     &.scrolled {
       visibility: visible;
       opacity: 1;

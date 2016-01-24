@@ -1,5 +1,5 @@
 .registry {
-  @include responsive-grid(4);
+  @include grid(3);
 }
 
 .registry-coming-soon-tag {

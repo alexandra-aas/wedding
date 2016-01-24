@@ -1,10 +1,5 @@
 .accommodation {
-  @include responsive-grid(6);
-  margin-top: $medium-spacing;
-
-  @include media($medium-screen-up) {
-    margin-top: $large-spacing;
-  }
+  @include grid(2);
 
   .button {
     margin-top: $medium-spacing;

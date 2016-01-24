@@ -2,6 +2,10 @@
   background-color: $navy;
   min-height: 500px;
   position: relative;
+
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .callout-image {
@@ -24,11 +28,7 @@
 }
 
 .callout-content {
-  padding: $medium-spacing $base-spacing;
-
-  p {
-    @include margin($medium-spacing null 0);
-  }
+  padding: $medium-spacing;
 
   @include media($medium-screen-up) {
     margin-left: 50%;

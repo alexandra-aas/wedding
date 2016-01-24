@@ -126,9 +126,9 @@ h1, h2, h3, h4, h5, h6, p, small {
 
 section {
   @include outer-container;
-  @include padding($medium-spacing $base-spacing);
+  padding: $medium-spacing;
 
-  @include media($medium-screen-up) {
+  @include media($large-screen-up) {
     @include padding($largest-spacing 0);
   }
 }

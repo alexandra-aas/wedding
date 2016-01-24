@@ -1,13 +1,29 @@
-@mixin responsive-grid($columns, $margin-bottom: $medium-spacing) {
-  @include span-columns(12);
-  @include margin(null 0 $margin-bottom null);
+@mixin grid($columns) {
+  $gutter: 1%;
 
-  &:last-of-type {
-    margin-bottom: 0;
-  }
+  float: left;
+  @include margin(null $gutter $medium-spacing);
+  width: 98%;
 
-  @include media($medium-screen-up) {
-    @include span-columns($columns);
-    margin-bottom: 0;
+  @if $columns == 2 {
+    @include media($medium-screen-up) {
+      margin-bottom: 0;
+      width: 48%;
+    }
+
+  } @elseif $columns == 3 {
+    @include media($medium-screen-up) {
+      width: 31%;
+    }
+
+  } @elseif $columns == 4 {
+    @include media($small-screen-up) {
+      width: 48%;
+    }
+
+    @include media($large-screen-up) {
+      margin-bottom: 0;
+      width: 23%;
+    }
   }
 }

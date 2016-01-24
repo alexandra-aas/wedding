@@ -8,12 +8,12 @@
   @include margin(null auto);
   display: none;
 
-  @include media($medium-screen-up) {  
+  @include media($large-screen-up) {
     display: block;
   }
 }
 
 .schedule-event {
-  @include responsive-grid(6);
+  @include grid(2);
   margin-top: $medium-spacing;
 }

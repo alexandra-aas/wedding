@@ -1,10 +1,10 @@
 - image: chair
   name: Crate & Barrel
-  url: http://www.crateandbarrel.com/gift-registry/
+  url: http://www.crateandbarrel.com/
 
 - image: sheep
   name: Honeymoon
-  url: http://www.honeyfund.com/
+  url: https://www.honeyfund.com/
 
 - image: radish
   name: Williams-Sonoma

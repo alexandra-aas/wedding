@@ -3,7 +3,7 @@
 }
 
 .wedding-party-person {
-  @include responsive-grid(3);
+  @include grid(4);
   padding-bottom: $base-spacing;
   position: relative;
 }
