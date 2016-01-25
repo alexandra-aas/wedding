@@ -32,4 +32,8 @@
 
 .large-paragraph {
   font-size: $base-font-size;
+
+  @include media($small-screen-up) {
+    font-size: $medium-font-size;
+  }
 }

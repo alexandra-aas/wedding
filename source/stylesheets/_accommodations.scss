@@ -9,6 +9,10 @@
   @include media($medium-screen-up) {
     margin-top: $medium-spacing;
     width: 48%;
+
+    &:last-of-type {
+      margin-top: $medium-spacing;
+    }
   }
 
   .button {
