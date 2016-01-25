@@ -41,7 +41,7 @@ $large-line-height: $base-line-height * 2;
 // Spacing
 $base-spacing: 1.25rem;
 $small-spacing: $base-spacing * 0.5;
-$medium-spacing: $base-spacing * 2;
+$medium-spacing: $base-spacing * 1.5;
 $large-spacing: $base-spacing * 4;
 $largest-spacing: $base-spacing * 6;
 
@@ -66,3 +66,6 @@ $large-screen: em(1200);
 $small-screen-up: new-breakpoint(min-width $small-screen 12);
 $medium-screen-up: new-breakpoint(min-width $medium-screen 12);
 $large-screen-up: new-breakpoint(min-width $large-screen 12);
+
+// Other
+$gutter: 1%;

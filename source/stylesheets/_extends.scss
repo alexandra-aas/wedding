@@ -29,9 +29,14 @@
 }
 
 %header-divider {
-  margin-bottom: $medium-spacing;
-  padding-bottom: $medium-spacing;
+  margin-bottom: $base-spacing;
+  padding-bottom: $base-spacing;
   position: relative;
+
+  @include media($small-screen-up) {
+    margin-bottom: $medium-spacing;
+    padding-bottom: $medium-spacing;
+  }
 
   &:after {
     @include position(absolute, null 0 0);
@@ -39,4 +44,6 @@
     background-color: $mustard;
     content: "";
   }
+
+
 }

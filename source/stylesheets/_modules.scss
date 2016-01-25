@@ -10,7 +10,7 @@
 }
 
 .button {
-  @include media($medium-screen-up) {
+  @include media($small-screen-up) {
     width: 300px;
   }
 }

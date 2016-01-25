@@ -11,7 +11,7 @@
     font-size: $hero-mobile-font-size;
     margin-bottom: 0;
 
-    @include media($medium-screen-up) {
+    @include media($small-screen-up) {
       font-size: $largest-font-size;
     }
   }
@@ -19,7 +19,7 @@
   h4 {
     margin: $small-spacing;
 
-    @include media($medium-screen-up) {
+    @include media($small-screen-up) {
       margin: $medium-spacing;
     }
   }

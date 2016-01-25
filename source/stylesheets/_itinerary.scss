@@ -21,6 +21,7 @@
 .itinerary-image {
   @include position(absolute, 0px 0px 0px 52%);
   background-image: image-url("millwrights_interior.jpg");
+  background-position: center;
   background-size: cover;
   display: none;
 

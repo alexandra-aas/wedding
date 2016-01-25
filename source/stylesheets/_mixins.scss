@@ -1,32 +1,7 @@
 // TODO: Clean this up
 
-@mixin grid($columns) {
-  $gutter: 1%;
-
+@mixin grid {
   float: left;
-  @include margin($medium-spacing $gutter null);
-  width: 98%;
-
-  @if $columns == 2 {
-    @include media($medium-screen-up) {
-      margin-top: 0;
-      width: 48%;
-    }
-
-  } @elseif $columns == 3 {
-    @include media($medium-screen-up) {
-      margin-top: 0;
-      width: (100% / 3) - ($gutter * 2);
-    }
-
-  } @elseif $columns == 4 {
-    @include media($small-screen-up) {
-      width: 48%;
-    }
-
-    @include media($large-screen-up) {
-      margin-top: 0;
-      width: 23%;
-    }
-  }
+  @include margin(null $gutter);
+  width: 100% - ($gutter * 2);
 }

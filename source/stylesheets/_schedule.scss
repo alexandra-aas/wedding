@@ -14,5 +14,15 @@
 }
 
 .schedule-event {
-  @include grid(2);
+  @include grid;
+  margin-top: $base-spacing;
+
+  &:last-of-type {
+    margin-top: $base-spacing * 2;
+  }
+
+  @include media($medium-screen-up) {
+    margin-top: $medium-spacing;
+    width: 48%;
+  }
 }

@@ -1,5 +1,10 @@
 .registry {
-  @include grid(3);
+  @include grid;
+  margin-top: $base-spacing;
+
+  @include media($medium-screen-up) {
+    width: (100% / 3) - ($gutter * 2);
+  }
 }
 
 .registry-coming-soon-tag {
