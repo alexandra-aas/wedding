@@ -5,28 +5,23 @@
 }
 
 .ct-state {
-  @include margin(null auto);
+  @include margin(null auto $medium-spacing);
   display: none;
 
-  @include media($large-screen-up) {
+  @include media($medium-screen-up) {
     display: block;
   }
 }
 
 .schedule-event {
   @include grid;
-  margin-top: $base-spacing;
-
-  &:last-of-type {
-    margin-top: $base-spacing * 2;
-  }
+  margin-bottom: $medium-spacing;
 
   @include media($medium-screen-up) {
-    margin-top: $medium-spacing;
     width: 48%;
+  }
 
-    &:last-of-type {
-      margin-top: $medium-spacing;
-    }
+  @include media($large-screen-up) {
+    margin-bottom: 0;
   }
 }

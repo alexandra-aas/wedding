@@ -20,7 +20,7 @@
     margin: $small-spacing;
 
     @include media($small-screen-up) {
-      margin: $medium-spacing;
+      margin: $base-spacing;
     }
   }
 }

@@ -4,7 +4,7 @@
 
 .wedding-party-person {
   @include grid;
-  margin-top: $base-spacing;
+  margin-bottom: $medium-spacing;
   padding-bottom: $base-spacing;
   position: relative;
 
@@ -13,6 +13,7 @@
   }
 
   @include media($large-screen-up) {
+    margin-bottom: 0;
     width: 23%;
   }
 }

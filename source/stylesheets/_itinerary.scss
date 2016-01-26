@@ -1,10 +1,12 @@
-// TODO: Calculations automatic
-
 .itinerary {
   position: relative;
 
   @include media($medium-screen-up) {
-    @include margin($medium-spacing 0 $largest-spacing);
+    margin-bottom: $medium-spacing;
+  }
+
+  @include media($large-screen-up) {
+    margin-bottom: $largest-spacing;
   }
 }
 

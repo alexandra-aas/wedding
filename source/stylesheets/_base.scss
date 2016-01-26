@@ -29,7 +29,7 @@ h3 {
 }
 
 h2 {
-  margin-bottom: $base-spacing;
+  margin-bottom: $medium-spacing;
 
   @include media($small-screen-up) {
     font-size: $largest-font-size;
@@ -97,10 +97,6 @@ li {
 p {
   margin-bottom: $base-spacing;
 
-  @include media($small-screen-up) {
-    margin-bottom: $medium-spacing;
-  }
-
   strong {
     font-weight: $text-semibold;
   }
@@ -137,7 +133,7 @@ h1, h2, h3, h4, h5, h6, p, small {
 
 section {
   @include outer-container;
-  padding: $medium-spacing $base-spacing;
+  @include padding($medium-spacing $base-spacing null);
 
   @include media($large-screen-up) {
     @include padding($largest-spacing 0);
@@ -146,4 +142,9 @@ section {
 
 footer {
   background: $dark-mustard;
+  padding: $medium-spacing;
+
+  @include media($medium-screen-up) {
+    padding: $large-spacing;
+  }
 }

@@ -28,7 +28,7 @@
 }
 
 .callout-content {
-  padding: $medium-spacing;
+  padding: $medium-spacing $base-spacing;
 
   @include media($medium-screen-up) {
     margin-left: 50%;

@@ -1,21 +1,24 @@
 .accommodation {
   @include grid;
-  margin-top: $base-spacing;
-
-  &:last-of-type {
-    margin-top: $base-spacing * 2;
-  }
+  margin-bottom: $medium-spacing;
 
   @include media($medium-screen-up) {
-    margin-top: $medium-spacing;
     width: 48%;
+  }
 
-    &:last-of-type {
-      margin-top: $medium-spacing;
-    }
+  @include media($large-screen-up) {
+    margin-bottom: 0;
   }
 
   .button {
-    margin-top: $medium-spacing;
+    margin-top: $base-spacing;
+
+    @include media($medium-screen-up) {
+      margin-top: $medium-spacing;
+    }
   }
+}
+
+.accomodation-hero {
+  margin-bottom: $medium-spacing;
 }

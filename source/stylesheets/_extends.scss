@@ -33,9 +33,9 @@
   padding-bottom: $base-spacing;
   position: relative;
 
-  @include media($small-screen-up) {
-    margin-bottom: $medium-spacing;
-    padding-bottom: $medium-spacing;
+  @include media($medium-screen-up) {
+    margin-bottom: $regular-spacing;
+    padding-bottom: $regular-spacing;
   }
 
   &:after {
