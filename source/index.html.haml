@@ -5,15 +5,15 @@
   = partial "schedule"
 
 .js-anchor#anchor_food
-  = partial "callout", locals: { title: t(".food.title"),
+  = partial "callout", locals: { name: "food", title: t(".food.title"),
     content: t(".food.content_html"), image: "millwrights_food.jpg" }
 
 .js-anchor#anchor_accommodations
   = partial "accommodations"
 
-.js-anchor#anchor_buses
-  = partial "callout", locals: { title: t(".buses.title"),
-    content: t(".buses.content_html"), image: "historic_map.png" }
+.js-anchor#anchor_transportation
+  = partial "callout", locals: { name: "transportation", title: t(".transportation.title"),
+    content: t(".transportation.content_html"), image: "historic_map.png" }
 
 .js-anchor#anchor_registry
   = partial "registry"

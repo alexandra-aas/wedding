@@ -1,3 +1,6 @@
+//= require jquery
+//= require moment
+
 var anchoredSection = $(".js-anchor");
 var nav = $(".js-nav");
 var navHeight = nav.height();
