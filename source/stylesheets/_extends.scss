@@ -21,11 +21,6 @@
     @include margin(null auto $base-spacing auto);
     display: block;
   }
-
-  &.button-disabled {
-    background-color: $mustard;
-    cursor: default;
-  }
 }
 
 %header-divider {
@@ -44,6 +39,4 @@
     background-color: $mustard;
     content: "";
   }
-
-
 }

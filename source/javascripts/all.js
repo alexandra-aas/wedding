@@ -34,8 +34,21 @@ function navScrollStyling(windowScrollHeight) {
 }
 
 function countDown() {
-  var wedding = moment([2016, 10, 22]).fromNow(true);
-  $(".js-from-now").append(wedding);
+  var today = moment([]);
+  var weddingDay = moment([2016, 09, 22]);
+  var fromNow = weddingDay.diff(today, "days");
+
+  if (fromNow > 1) {
+    var fromNowFormatted = fromNow + " Days to go";
+  } else if (fromNow == 1) {
+    var fromNowFormatted = fromNow + " Day to go";
+  } else if (fromNow == 0) {
+    var fromNowFormatted = "Our wedding is today"
+  } else {
+    var fromNowFormatted = "Thanks for coming to our wedding"
+  }
+
+  $(".js-from-now").append(fromNowFormatted);
 }
 
 function checkCurrentSectionOnScroll() {
